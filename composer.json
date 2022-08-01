@@ -8,7 +8,8 @@
         "name": "Ikenna Anikwe",
         "email": "eddyiyke3@gmail.com"
     }],
-    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": { "ikebeelion\\array_helpers\\": "php/" }
     },
