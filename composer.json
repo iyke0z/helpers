@@ -9,7 +9,7 @@
             "email": "eddyiyke3@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {"ikebeelion\\array_helpers\\": "php/"}
     },
