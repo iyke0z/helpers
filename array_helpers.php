@@ -40,16 +40,13 @@
 
 	//php function returns values that are thesame in an object
 	function getSameValueInObject(array $object, string $key){		
-    if(count($object) > 1){
-        $sameValueInArray = array();                
-        for ($i=0; $i < count($object) ; $i++) {            
-            foreach ($object as $value) {                 
-                	$object[$i][$key] == $value[$key] ? array_push($sameValueInArray, $object[$i][$key]): null;                                       
-                }             
-            }               
-	        $multipleOccurringVal = sameValuesInArray($sameValueInArray);        
+    	if(count($object) > 1){
+        	$sameValue = array();                        	          
+            	foreach ($object as $value) {              
+            		array_push($sameValue, $value[$key]);                 
+                }                              
+	        $multipleOccurringVal = sameValuesInArray($sameValue);        
 	        $showObjects = getElementByValue($key, $multipleOccurringVal, $object);
-	        print_r($showObjects);
 	        return $showObjects;
 	    }else{
 	        return "Array size must be greater than one";
@@ -57,8 +54,22 @@
 		
 	}
 
+	function getHighestValueInObject(array $object, string $key){
+		$highest = [];
+		foreach ($object as $value) {
+			array_push($highest, $value[$key]);
+		}		
+		return max(...$highest);
+
+	}
+
 	// $array = [ ["name"=>'Ikenna', "age"=>"25", "gender"=>'male'], 
 	//                ["name"=>'Edmund', "age"=>"25", "gender"=>'male'],
 	//                ["name"=>'Beauty', "age"=>"22", "gender"=>'female'],];
-	//  	getSameValueInObject($array, 'age');
+	//  	getHighestValueInObject($array, 'age');
+	// returns a new array
+	// [
+	//   { name: 'Ikenna', age: '25', gender: 'male' },
+	//   { name: 'Edmund', age: '25', gender: 'male' }
+	// ]
 ?>
