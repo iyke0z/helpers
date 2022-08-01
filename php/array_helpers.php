@@ -25,7 +25,6 @@ function sameValuesInArray(array $array) {
 	    return $samevalues;
 	}
 
-
 	//php function returns value that are thesame in an array    
 	function getElementByValue(string $key, array $valueArr, array $array){
 	    $objects = array();
@@ -51,8 +50,7 @@ function sameValuesInArray(array $array) {
 	        return $showObjects;
 	    }else{
 	        return "Array size must be greater than one";
-	    }
-		
+	    }	
 	}
 
 	function getHighestValueInObject(array $object, string $key){
