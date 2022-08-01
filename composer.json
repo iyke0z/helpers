@@ -3,15 +3,13 @@
     "description": "Helper functions for manipulating arrays",
     "type": "library",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Ikenna Anikwe",
-            "email": "eddyiyke3@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Ikenna Anikwe",
+        "email": "eddyiyke3@gmail.com"
+    }],
     "minimum-stability": "stable",
     "autoload": {
-        "psr-4": {"ikebeelion\\array_helpers\\": "php/"}
+        "psr-4": { "ikebeelion\\array_helpers\\": "php/" }
     },
     "require": {}
 }
